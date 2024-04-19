@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: #ffebee; 
 }
+
 .resume {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -22,6 +23,7 @@ body {
     border-radius: 15px;
     background-color: #fce4ec; 
 }
+
 header {
     display: flex;
     justify-content: center;
@@ -32,6 +34,7 @@ header {
     grid-area: header;
     border-radius: 10px 10px 0 0;
 }
+
 .fotografia img {
     border-radius: 50%;
     border: 4px solid #ec407a;
@@ -39,7 +42,8 @@ header {
     height: 150px;
     display: block;
     margin-right: 200px;
-    }
+}
+
 footer {
     grid-area: footer;
     background-color: #ec40798c;
@@ -47,8 +51,13 @@ footer {
     text-align: center;
     padding: 10px 20px;
 }
+
 .details, .profile, .hobbies, .studies, .work-experience {
     padding: 20px;
     border-radius: 5px;
     background-color: #f8bbd0; 
+}
+
+.image-container {
+    text-align: center;
 }
