@@ -2,5 +2,53 @@ body {
     font-family: 'Arial', sans-serif;
     font-size: medium;
     margin: 0;
-    background-color: #ffebee; /* Rosado muy claro */
+    background-color: #ffebee; 
+}
+.resume {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+        "header header"
+        "details profile"
+        "studies studies"
+        "work-experience work-experience"
+        "hobbies hobbies"
+        "footer footer";
+    gap: 20px;
+    padding: 50px;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    border-radius: 15px;
+    background-color: #fce4ec; 
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ec40798c; 
+    color: #ffffff;
+    padding: 10px 20px;
+    grid-area: header;
+    border-radius: 10px 10px 0 0;
+}
+.fotografia img {
+    border-radius: 50%;
+    border: 4px solid #ec407a;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-right: 200px;
+    }
+footer {
+    grid-area: footer;
+    background-color: #ec40798c;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    padding: 10px 20px;
+}
+.details, .profile, .hobbies, .studies, .work-experience {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f8bbd0; 
 }
