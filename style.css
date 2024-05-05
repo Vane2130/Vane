@@ -61,3 +61,37 @@ footer {
 .image-container {
     text-align: center;
 }
+
+
+@media (max-width: 960px) {
+    .resume {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "details"
+            "profile"
+            "studies"
+            "work-experience"
+            "hobbies"
+            "footer";
+    }
+
+    .fotografia img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: small;
+    }
+
+    .resume {
+        padding: 20px;
+    }
+
+    header, footer {
+        padding: 10px;
+    }
+}
